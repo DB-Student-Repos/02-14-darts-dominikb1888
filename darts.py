@@ -16,7 +16,6 @@ def calc_score(r, circles):
     # Potential change of the api to get upper bound from data or to ask for additional variable with
     scoring = create_score_dict(circles)
     scrlist = list(scoring.keys())
-    print(scoring, scrlist)
     for i in range(len(scrlist) - 1):
         if scrlist[i] < r <= scrlist[i + 1]:
             return scoring[scrlist[i]]
